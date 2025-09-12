@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import Navbar from "@/components/Navbar";
+import DarkVeil from "@/components/Bits/Dark-veil";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,7 +23,27 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+
+<div className="relative w-screen h-screen overflow-hidden">
+          {/* Background effect */}
+          <div className="absolute inset-0 z-0">
+            <DarkVeil
+        
+            />
+          </div>
+
+
+<div className="relative z-10">
+            <Navbar />
+            
+            <main className="w-full h-full mt-32">
+
+            {children}
+            </main>
+          </div>
+</div>
+     
+
       </body>
     </html>
   );
