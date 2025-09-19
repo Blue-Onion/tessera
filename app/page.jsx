@@ -13,9 +13,9 @@ export default function Home() {
             Bring your ideas to life through elegant animation, seamless storytelling, and intelligent design.
           </p>
           <div className="flex items-center flex-col md:flex-row justify-center gap-4">
-            <Button>Start Now</Button>
+            <Button  variant={"primary"}>Start Now</Button>
             <Link href={"/https://github.com/Blue-Onion/tessera"}>
-              <Button>Learn More</Button>
+              <Button variant={"outline"}>Learn More</Button>
             </Link>
           </div>
         </div>
