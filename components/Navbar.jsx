@@ -3,7 +3,7 @@ import { Button } from './ui/button'
 
 const Navbar = () => {
   return (
-    <header className='container mx-auto py-4'>
+    <header className='container mx-auto p-4'>
       <nav className='flex justify-between items-center'>
         <div className="">
           <h2 className='text-xl'>Tessera</h2>

@@ -1,9 +1,9 @@
+import TesseraFaqAccordion from "@/components/accodrin";
 import Shimmer from "@/components/shimmer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Skeleton } from "@/components/ui/skeleton";
 import { features } from "@/data/feature";
-import { BarChart2, FileText } from "lucide-react";
+import { ArrowRight} from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -25,16 +25,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="mx-auto container text-center">
         {/* Section header */}
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Powerful <span className="text-[#480CC3]">Features</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Discover how Tessera transforms your storytelling with cutting-edge animation technology
-          </p>
+
         </div>
 
         {/* Features grid */}
@@ -62,10 +56,54 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <section className="mx-auto hidden md:block py-32 container">
-       <Shimmer/>
+      <section className="mx-auto py-32 container">
+        <Shimmer />
       </section>
+      <section className="mx-auto py-32 container">
+        <div className="text-center">
+          <h2 className="text-2xl flex gap-2 items-center justify-center md:text-4xl font-bold">
+            <span className="text-[#480CC3]">
+              Frequently
+
+            </span>
+            <span>
+              asked
+              question
+            </span>
+
+          </h2>
+        </div>
+        <div className="py-12">
+          <TesseraFaqAccordion />
+        </div>
+      </section>
+      <section className="w-full">
+       <div className="py-24 mx-auto px-4 bg-gradient-to-b from-[#480CC3] via-[#5A2FBF] to-[#2E1065] rounded-2xl shadow-lg">
+  <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
+    
+    <h2 className="text-3xl font-extrabold tracking-tight text-transparent bg-clip-text gradient-title sm:text-4xl md:text-5xl">
+      Ready to Bring Your Ideas to Life?
+    </h2>
+    
+    <p className="mx-auto max-w-[600px] text-purple-100/90 md:text-xl">
+      Join creators, educators, and innovators using <span className="font-semibold text-purple-50 mx-1">Tessera</span> 
+      to design stunning animated visualizations — powered by AI and Manim.
+    </p>
+    
+    <Link href={"/dashboard"}>
+      <Button
+        size="lg"
+        variant="primary"
+        className="h-11 mt-5 bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm rounded-xl transition-all animate-bounce"
+      >
+        Start Creating with Tessera <ArrowRight className="ml-2 h-4 w-4"/>
+      </Button>
+    </Link>
+    
+  </div>
+</div>
+      </section>
+      
     </div>
   );
 }

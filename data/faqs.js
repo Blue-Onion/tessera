@@ -19,20 +19,5 @@ export const faqs=[
     "question": "Is Tessera free to use?",
     "answer": "Tessera offers a free tier with essential features. Premium plans unlock advanced effects, faster rendering, and larger storage."
   },
-  {
-    "question": "Can I share or download my videos?",
-    "answer": "Absolutely — you can download in HD or share directly to platforms like YouTube, Google Drive, or social media."
-  },
-  {
-    "question": "Does Tessera support collaboration?",
-    "answer": "Yes, Tessera allows multiple users to work on the same project, making it perfect for classrooms, research teams, or creative collaborations."
-  },
-  {
-    "question": "Which platforms does Tessera work on?",
-    "answer": "Tessera is web-based and works on any modern browser (Chrome, Edge, Firefox, Safari). No heavy installation required."
-  },
-  {
-    "question": "Can I use Tessera offline?",
-    "answer": "Currently, Tessera is cloud-based and requires an internet connection. Offline mode is planned for future updates."
-  }
+
 ]
