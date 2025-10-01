@@ -34,7 +34,7 @@ export default function Home() {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="group border-violet-800/20 bg-muted/40 border-l-8 hover:border-violet-600/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden"
+              className="group border-violet-800/20 bg-black border-l-8 hover:border-violet-600/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden"
             >
               <CardHeader className="pb-2 text-center flex flex-col gap-3 items-center justify-center">
                 <div className="bg-purple-900/10 p-3 rounded-lg w-fit mb-4  transition-colors duration-300">

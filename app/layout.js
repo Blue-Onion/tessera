@@ -1,10 +1,6 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import DarkVeil from "@/components/DarkVeil";
-
-const inter = Inter({ subsets: ["latin"] });
-
 // Metadata for Tessera
 export const metadata = {
   title: "Tessera - AI Video Generator",
@@ -15,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark" >
-      <body className={`${inter.className} dark text-white`}>
+      <body className={`$ text-white`}>
         <div className="relative w-screen min-h-screen">
           {/* Background effect */}
           <div className="absolute inset-0 z-0">
