@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} dark text-white`}>
         <div className="relative w-screen min-h-screen">
           {/* Background effect */}
-          <div className="fixed inset-0 z-0">
+          <div className="absolute inset-0 z-0">
             <DarkVeil speed={3} />
           </div>
 
