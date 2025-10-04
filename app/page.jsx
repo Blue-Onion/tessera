@@ -1,4 +1,5 @@
 import TesseraFaqAccordion from "@/components/accodrin";
+import Hero from "@/components/hero";
 import Shimmer from "@/components/shimmer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,20 +11,7 @@ export default function Home() {
   return (
     <div className="container mx-auto p-4">
       <section className="py-32 text-center min-h-screen">
-        <div className='space-y-6 flex flex-col items-center'>
-          <h1 className='text-4xl font-bold md:text-6xl max lg:text-7xl max-w-5xl xl:text-8xl gradient-title'>
-            Your Story, Tessera Seamlessly Animated
-          </h1>
-          <p className='mx-auto max-w-xs md:max-w-2xl text-muted-foreground md:text-xl'>
-            Bring your ideas to life through elegant animation, seamless storytelling, and intelligent design.
-          </p>
-          <div className="flex items-center flex-col md:flex-row justify-center gap-4">
-            <Button variant={"primary"}>Start Now</Button>
-            <Link target="_blank" href={"https://github.com/Blue-Onion/tessera"}>
-              <Button variant={"secondary"}>Learn More</Button>
-            </Link>
-          </div>
-        </div>
+        <Hero/>
       </section>
       <section className="mx-auto container text-center">
         {/* Section header */}
@@ -34,7 +22,7 @@ export default function Home() {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="group border-violet-800/20 bg-black border-l-8 hover:border-violet-600/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden"
+              className="group border-violet-800/20 bg-black/80  border-l-8 hover:border-violet-600/40 hover:shadow-lg transition-all duration-300 relative overflow-hidden"
             >
               <CardHeader className="pb-2 text-center flex flex-col gap-3 items-center justify-center">
                 <div className="bg-purple-900/10 p-3 rounded-lg w-fit mb-4  transition-colors duration-300">
